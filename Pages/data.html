@@ -1,4 +1,50 @@
 <body>
-    <h1>Data</h1>
-    <img src="../Images/visualize-lg.png"/>
+  <h1>Data</h1>
+  <!-- <img src="../Images/data-lg.png" /> -->
+  <table id ="table"></table>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <script type="text/javascript">
+    function createTable() {
+      d3.csv("../Resources/cities.csv").then((data) => {
+        console.log(data);
+        var tableData = data;
+        //table body
+        var tableBody = d3.select("#table");
+        //the filter button
+        // var filterBtn = d3.select("#filter-button");
+        // //the reset button
+        // var resetBtn = d3.select("#reset-button");
+        //the form
+        // var form = d3.select("#form");
+
+        
+        data.columns.forEach((Fname)=>{
+            tableBody.append ("th").text(Fname)
+        })
+
+
+        //populate the table
+        const tableMaker = (data) => {
+          data.forEach((accs) => {
+            var row = tableBody.append("tr");
+            var cityid = row.append("td").text(accs.City_ID);
+            var City = row.append("td").text(accs.City);
+            var Cloudiness = row.append("td").text(accs.Cloudiness);
+            var Country = row.append("td").text(accs.Country);
+            var Date = row.append("td").text(accs.Date);
+            var Humidity = row.append("td").text(accs.Humidity);
+            var Lat = row.append("td").text(accs.Lat);
+            var Lng = row.append("td").text(accs.Lng);
+            var MaxTemp = row.append("td").text(accs["Max Temp"]);
+            var WindSpeed = row.append("td").text(accs["Wind Speed"]);
+          });
+        };
+
+        tableMaker(tableData);
+      });
+    }
+    //put table on page
+    createTable();
+  </script>
 </body>
