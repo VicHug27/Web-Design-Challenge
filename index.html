@@ -16,40 +16,76 @@
     <title>Data Visualization Project</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./Pages/maxtemp.html">Temperature</a>
-              <a class="dropdown-item" href="./Pages/humidity.html">Humidity</a>
-              <a class="dropdown-item" href="./Pages/windspeed.html">Wind Speed</a>
-              <a class="dropdown-item" href="./Pages/cloudiness.html">Cloudiness1</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="./Pages/cloudiness.html">Cloudiness2</a>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link" href="./Pages/comparison.html">Comparison</a>
-            </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./Pages/data.html">Data</a>
-          </li>
-        </ul>
- 
-      </div>
-    </nav>
     <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./Pages/maxtemp.html"
+                      >Temperature</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Pages/humidity.html"
+                      >Humidity</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Pages/windspeed.html"
+                      >Wind Speed</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./Pages/cloudiness.html"
+                      >Cloudiness</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./Pages/data.html"
+                  >Data</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/comparison.html"
+                  >Comparisons</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <!-- Content here -->
-      <ul class="nav">
+      <!-- <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="./Pages/comparison.html"
             >Visualization Comparisons</a
@@ -70,7 +106,7 @@
         <li class="nav-item">
           <a class="nav-link" href="./Pages/data.html">Data Table</a>
         </li>
-      </ul>
+      </ul> -->
       <div class="row">
         <div class="col-8">
           <h1>My Weather Project</h1>
@@ -85,8 +121,6 @@
             the analysis, as well as explanations and descriptions of any trends
             and correlations witnesseed.
           </div>
-
-
         </div>
         <div class="col-4">
           <a href="./Pages/maxtemp.html">
