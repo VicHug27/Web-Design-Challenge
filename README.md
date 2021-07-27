@@ -1,3 +1,5 @@
+Github page for Homework assignment: https://vichug27.github.io/Web-Design-Challenge/
+
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
 ## Background
